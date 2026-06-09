@@ -479,41 +479,36 @@ export default {
     },
     
     generateQRCodeImage() {
-      // QR kod oluşturma (QRCode.js kütüphanesi kullanarak)
+      // QR kod oluşturma (qrcode paketi kullanarak)
       const qrContainer = document.getElementById('qr-code-container')
       if (!qrContainer) return
       
       // Önceki QR'ı temizle
       qrContainer.innerHTML = ''
       
-      // Yeni QR oluştur
-      try {
-        // QRCode kütüphanesi yüklü değilse basit bir alternatif
-        if (typeof QRCode === 'undefined') {
-          // Google Charts API kullanarak QR kod
-          const img = document.createElement('img')
-          img.src = `https://chart.googleapis.com/chart?cht=qr&chs=300x300&chl=${encodeURIComponent(this.qrCodeUrl)}`
-          img.alt = 'QR Code'
-          img.style.width = '100%'
-          img.style.height = 'auto'
-          qrContainer.appendChild(img)
-        } else {
-          // qrcode paketi kullan (canvas-based)
-          QRCode.toCanvas(qrContainer, this.qrCodeUrl, {
-            width: 300,
-            margin: 2,
-            color: {
-              dark: '#000000',
-              light: '#ffffff'
-            }
-          }, (error) => {
-            if (error) console.error('QR Code oluşturma hatası:', error)
-          })
+      // Canvas oluştur
+      const canvas = document.createElement('canvas')
+      qrContainer.appendChild(canvas)
+      
+      // QR kod oluştur
+      QRCode.toCanvas(canvas, this.qrCodeUrl, {
+        width: 300,
+        margin: 2,
+        color: {
+          dark: '#000000',
+          light: '#ffffff'
         }
-      } catch (e) {
-        console.error('QR kod oluşturma hatası:', e)
-        alert('❌ QR kod oluşturulamadı')
-      }
+      }).catch(error => {
+        console.error('QR Code oluşturma hatası:', error)
+        // Hata durumunda Google Charts API kullan
+        qrContainer.innerHTML = ''
+        const img = document.createElement('img')
+        img.src = `https://chart.googleapis.com/chart?cht=qr&chs=300x300&chl=${encodeURIComponent(this.qrCodeUrl)}`
+        img.alt = 'QR Code'
+        img.style.width = '100%'
+        img.style.height = 'auto'
+        qrContainer.appendChild(img)
+      })
     },
     
     downloadQR() {

@@ -483,8 +483,8 @@ export default {
             )
           })
           console.log('📍 Demo: Konum alındı (kontrol edilmeyecek)')
-        } catch { 
-          console.log('📍 Demo: Konum olmadan devam ediliyor')
+        } catch (err) { 
+          console.log('📍 Demo: Konum olmadan devam ediliyor', err.message || '')
         }
         
         const res = await axios.post('http://localhost:3000/api/table/session', {
@@ -711,8 +711,8 @@ export default {
             )
           })
           console.log('✅ Demo: Güncel konum alındı (kontrol edilmeyecek):', currentLocation)
-        } catch (locationError) {
-          console.log('📍 Demo: Konum olmadan devam ediliyor')
+        } catch (error) {
+          console.log('📍 Demo: Konum olmadan devam ediliyor', error.message || '')
           // Demo'da konum olmasa da sipariş verilebilir
         }
         
@@ -748,7 +748,8 @@ export default {
       try {
         await axios.post('http://localhost:3000/api/waiter-calls', { tableId: this.tableNumber, tableNumber: this.tableNumber, reason: msg, status: 'pending' })
         alert(this.t('waiter_called'))
-      } catch (e) {
+      } catch (error) {
+        console.error('Garson çağrı hatası:', error)
         alert('Garson çağrısı gönderilemedi')
       }
     }
