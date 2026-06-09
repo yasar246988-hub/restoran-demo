@@ -1,0 +1,82 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🍽️ RESTORAN & KAFE YÖNETİM SİSTEMİ
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Merhaba,
+
+Restoranınızı dijital çağa taşıyacak QR menü bazlı 
+sipariş sistemi ile tanışın!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✨ ÖNE ÇIKAN ÖZELLİKLER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📱 MÜŞTERİ TARAFINDA:
+   ✓ QR kod ile anında sipariş
+   ✓ 3 dilde menü (TR/EN/AR)
+   ✓ 7 tema & 4 layout seçeneği
+   ✓ Garson çağırma sistemi
+   ✓ Anlık hesap görüntüleme
+
+💼 YÖNETİM PANELİ:
+   ✓ Masa durumu haritası
+   ✓ Anlık sipariş takibi
+   ✓ Menü & fiyat yönetimi
+   ✓ Çalışan performans takibi
+   ✓ Detaylı raporlar
+
+🔐 GÜVENLİK:
+   ✓ Konum bazlı sipariş kontrolü
+   ✓ QR'ı çekip evden sipariş ENGELLENMİŞ!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎬 CANLI DEMO - ŞİMDİ DENEYİN!
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🌐 Demo Panel:
+https://web-production-5d1af.up.railway.app
+
+👤 Giriş Bilgileri:
+   Kullanıcı: ceo
+   Şifre: ceo123
+
+📱 QR Menü Demo (Müşteri Görünümü):
+https://web-production-5d1af.up.railway.app/qr-menu?table=1
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 DEMO İSTATİSTİKLER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+67 Demo Ürün | 11 Kategori | 7 Tema Seçeneği
+Tüm özellikler aktif ve test edilebilir!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+💡 NEDEN BU SİSTEM?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✓ Personel maliyetini azaltın
+✓ Sipariş hatalarını ortadan kaldırın
+✓ Masa devir hızını artırın
+✓ Müşteri memnuniyetini yükseltin
+✓ Satışlarınızı 7/24 takip edin
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📞 İLETİŞİM
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📧 E-posta: info@example.com
+📱 Telefon: +90 555 123 45 67
+🌐 Web: yourwebsite.com
+
+Demo'yu inceledikten sonra görüşmek üzere 
+sizinle iletişime geçeceğiz.
+
+Sorularınız için her zaman buradayız! 🚀
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Saygılarımızla,
+[Şirket Adınız]
+Restoran Teknolojileri
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
