@@ -195,29 +195,88 @@ if (users.length === 0) {
   console.log('✅ Varsayılan CEO hesabı oluşturuldu');
 }
 let menuItems = [
-  // İçecekler
-  { id: 1, name: 'Türk Kahvesi', price: 25, category: 'İçecekler', image: 'https://images.unsplash.com/photo-1578374173703-64851e4b350f?w=400&q=80', description: 'Geleneksel Türk kahvesi, lokumlu', available: true },
-  { id: 2, name: 'Latte', price: 30, category: 'İçecekler', image: 'https://images.unsplash.com/photo-1561047029-3000c68339ca?w=400&q=80', description: 'Sıcak süt ile hazırlanmış espresso', available: true },
-  { id: 3, name: 'Çay', price: 16, category: 'İçecekler', image: 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&q=80', description: 'Demli Türk çayı', available: true },
-  { id: 4, name: 'Taze Portakal Suyu', price: 20, category: 'İçecekler', image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&q=80', description: 'Günlük sıkılmış portakal suyu', available: true },
-  { id: 5, name: 'Limonata', price: 18, category: 'İçecekler', image: 'https://images.unsplash.com/photo-1621263764928-df1444c5e859?w=400&q=80', description: 'Ev yapımı nane limonata', available: true },
-  { id: 6, name: 'Soğuk Kahve', price: 28, category: 'İçecekler', image: 'https://images.unsplash.com/photo-1517959105821-eaf2591984ca?w=400&q=80', description: 'Buzlu americano kahve', available: true },
+  // İçecekler - Kahveler (10 ürün)
+  { id: 1, name: 'Türk Kahvesi', price: 25, category: 'Kahveler', image: 'https://images.unsplash.com/photo-1578374173703-64851e4b350f?w=400&q=80', description: 'Geleneksel Türk kahvesi, lokumlu', available: true },
+  { id: 2, name: 'Latte', price: 30, category: 'Kahveler', image: 'https://images.unsplash.com/photo-1561047029-3000c68339ca?w=400&q=80', description: 'Sıcak süt ile hazırlanmış espresso', available: true },
+  { id: 3, name: 'Cappuccino', price: 32, category: 'Kahveler', image: 'https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&q=80', description: 'Espresso, süt köpüğü ve kakao', available: true },
+  { id: 4, name: 'Americano', price: 26, category: 'Kahveler', image: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=400&q=80', description: 'Sıcak sulu espresso', available: true },
+  { id: 5, name: 'Espresso', price: 22, category: 'Kahveler', image: 'https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=400&q=80', description: 'Çift shot espresso', available: true },
+  { id: 6, name: 'Mocha', price: 34, category: 'Kahveler', image: 'https://images.unsplash.com/photo-1607260550778-aa9d29444ce1?w=400&q=80', description: 'Çikolatalı latte, krema ile', available: true },
+  { id: 7, name: 'Soğuk Kahve', price: 28, category: 'Kahveler', image: 'https://images.unsplash.com/photo-1517959105821-eaf2591984ca?w=400&q=80', description: 'Buzlu americano kahve', available: true },
+  { id: 8, name: 'Flat White', price: 30, category: 'Kahveler', image: 'https://images.unsplash.com/photo-1545665225-b23b99e4d45e?w=400&q=80', description: 'Velvety microfoam latte', available: true },
+  { id: 9, name: 'Affogato', price: 35, category: 'Kahveler', image: 'https://images.unsplash.com/photo-1563636619-e9143da7973b?w=400&q=80', description: 'Vanilyalı dondurma üzerine espresso', available: true },
+  { id: 10, name: 'Filtre Kahve', price: 24, category: 'Kahveler', image: 'https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=400&q=80', description: 'V60 pour over', available: true },
   
-  // Yemekler
-  { id: 7, name: 'Karışık Tost', price: 70, category: 'Yemekler', image: 'https://images.unsplash.com/photo-1528736235302-52922df5c122?w=400&q=80', description: 'Kaşar, sucuk, domates ve marul ile', available: true },
-  { id: 8, name: 'Hamburger', price: 85, category: 'Yemekler', image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=80', description: 'Özel sos, et, sebze ve patates ile', available: true },
-  { id: 9, name: 'Pizza Margherita', price: 120, category: 'Yemekler', image: 'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&q=80', description: 'Domates sosu, mozzarella ve fesleğen', available: true },
-  { id: 10, name: 'Makarna', price: 65, category: 'Yemekler', image: 'https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=400&q=80', description: 'Kremalı mantarlı makarna', available: true },
-  { id: 11, name: 'Tavuk Salata', price: 55, category: 'Yemekler', image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=80', description: 'Izgara tavuk, yeşillik ve özel sos', available: true },
-  { id: 12, name: 'Köfte', price: 75, category: 'Yemekler', image: 'https://images.unsplash.com/photo-1529042410759-befb1204b468?w=400&q=80', description: 'Ev yapımı köfte, pilav ve salata', available: true },
+  // Çaylar ve Diğer İçecekler (8 ürün)
+  { id: 11, name: 'Çay', price: 16, category: 'Çaylar', image: 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&q=80', description: 'Demli Türk çayı', available: true },
+  { id: 12, name: 'Yeşil Çay', price: 18, category: 'Çaylar', image: 'https://images.unsplash.com/photo-1627435601361-ec25f5b1d0e5?w=400&q=80', description: 'Organik yeşil çay', available: true },
+  { id: 13, name: 'Bitki Çayı', price: 20, category: 'Çaylar', image: 'https://images.unsplash.com/photo-1597481499750-3e6b22637e12?w=400&q=80', description: 'Adaçayı, nane, papatya karışımı', available: true },
+  { id: 14, name: 'Taze Portakal Suyu', price: 28, category: 'Çaylar', image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&q=80', description: 'Günlük sıkılmış portakal suyu', available: true },
+  { id: 15, name: 'Limonata', price: 22, category: 'Çaylar', image: 'https://images.unsplash.com/photo-1621263764928-df1444c5e859?w=400&q=80', description: 'Ev yapımı nane limonata', available: true },
+  { id: 16, name: 'Smoothie', price: 32, category: 'Çaylar', image: 'https://images.unsplash.com/photo-1505252585461-04db1eb84625?w=400&q=80', description: 'Muz, çilek, yaban mersini karışımı', available: true },
+  { id: 17, name: 'Milkshake', price: 35, category: 'Çaylar', image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&q=80', description: 'Çikolatalı veya vanilyalı', available: true },
+  { id: 18, name: 'Sıcak Çikolata', price: 28, category: 'Çaylar', image: 'https://images.unsplash.com/photo-1542990253-a781e04c0082?w=400&q=80', description: 'Kremalı sıcak çikolata', available: true },
   
-  // Tatlılar
-  { id: 13, name: 'Tiramisu', price: 45, category: 'Tatlılar', image: 'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400&q=80', description: 'İtalyan tatlısı, kahve aromalı', available: true },
-  { id: 14, name: 'Cheesecake', price: 40, category: 'Tatlılar', image: 'https://images.unsplash.com/photo-1578775887804-699de7086ff9?w=400&q=80', description: 'Çilekli cheesecake', available: true },
-  { id: 15, name: 'Sütlaç', price: 25, category: 'Tatlılar', image: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&q=80', description: 'Geleneksel sütlaç, tarçınlı', available: true },
-  { id: 16, name: 'Baklava', price: 35, category: 'Tatlılar', image: 'https://images.unsplash.com/photo-1519676867240-f03562e64548?w=400&q=80', description: 'Antep fıstıklı baklava, 4 dilim', available: true },
-  { id: 17, name: 'Profiterol', price: 38, category: 'Tatlılar', image: 'https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&q=80', description: 'Çikolata soslu profiterol', available: true },
-  { id: 18, name: 'Dondurma', price: 22, category: 'Tatlılar', image: 'https://images.unsplash.com/photo-1580915411954-282cb1b0d780?w=400&q=80', description: 'Vanilyalı ev yapımı dondurma', available: true }
+  // Kahvaltı (7 ürün)
+  { id: 19, name: 'Serpme Kahvaltı', price: 120, category: 'Kahvaltı', image: 'https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=400&q=80', description: '2 kişilik zengin kahvaltı tabağı', available: true },
+  { id: 20, name: 'Menemen', price: 55, category: 'Kahvaltı', image: 'https://images.unsplash.com/photo-1606491048867-50b2b17f2056?w=400&q=80', description: 'Sucuklu veya sucuksuz', available: true },
+  { id: 21, name: 'Omlet', price: 45, category: 'Kahvaltı', image: 'https://images.unsplash.com/photo-1608039829572-78524f79c4c7?w=400&q=80', description: 'Peynirli, sebzeli veya mantarlı', available: true },
+  { id: 22, name: 'Sahanda Yumurta', price: 35, category: 'Kahvaltı', image: 'https://images.unsplash.com/photo-1582169296194-e4d644c48063?w=400&q=80', description: '2 yumurta, ekmek ile', available: true },
+  { id: 23, name: 'Gözleme', price: 50, category: 'Kahvaltı', image: 'https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=400&q=80', description: 'Peynirli, patatesli veya kıymalı', available: true },
+  { id: 24, name: 'Pankek', price: 48, category: 'Kahvaltı', image: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&q=80', description: 'Çilekli, muzlu veya çikolatalı', available: true },
+  { id: 25, name: 'Waffle', price: 52, category: 'Kahvaltı', image: 'https://images.unsplash.com/photo-1562376552-0d160a2f238d?w=400&q=80', description: 'Çikolata sosu ve meyveler ile', available: true },
+  
+  // Ana Yemekler (10 ürün)
+  { id: 26, name: 'Izgara Köfte', price: 95, category: 'Ana Yemekler', image: 'https://images.unsplash.com/photo-1529042410759-befb1204b468?w=400&q=80', description: 'Ev yapımı köfte, pilav ve salata', available: true },
+  { id: 27, name: 'Tavuk Şiş', price: 85, category: 'Ana Yemekler', image: 'https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=400&q=80', description: 'Izgara tavuk şiş, garnitür ile', available: true },
+  { id: 28, name: 'Kuzu Pirzola', price: 145, category: 'Ana Yemekler', image: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=400&q=80', description: 'Izgara kuzu pirzola, patates püresi', available: true },
+  { id: 29, name: 'Somon Balık', price: 135, category: 'Ana Yemekler', image: 'https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&q=80', description: 'Fırında somon, sebzeler ile', available: true },
+  { id: 30, name: 'Etli Nohut', price: 75, category: 'Ana Yemekler', image: 'https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=400&q=80', description: 'Etli nohut, pilav ile', available: true },
+  { id: 31, name: 'Tavuk Kanat', price: 70, category: 'Ana Yemekler', image: 'https://images.unsplash.com/photo-1608039829572-78524f79c4c7?w=400&q=80', description: 'BBQ soslu kanatlar, patates ile', available: true },
+  { id: 32, name: 'Biftek', price: 155, category: 'Ana Yemekler', image: 'https://images.unsplash.com/photo-1546964124-0cce460f38ef?w=400&q=80', description: 'Bonfile biftek, mantar sosu', available: true },
+  { id: 33, name: 'Karışık Izgara', price: 175, category: 'Ana Yemekler', image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&q=80', description: 'Köfte, tavuk, pirzola karışık', available: true },
+  { id: 34, name: 'Tavuk Sote', price: 80, category: 'Ana Yemekler', image: 'https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&q=80', description: 'Sebzeli tavuk sote, pilav ile', available: true },
+  { id: 35, name: 'Et Döner', price: 65, category: 'Ana Yemekler', image: 'https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=400&q=80', description: 'Et döner dürüm veya porsiyon', available: true },
+  
+  // Pizzalar & Burgerler (8 ürün)
+  { id: 36, name: 'Pizza Margherita', price: 110, category: 'Pizzalar', image: 'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&q=80', description: 'Domates sosu, mozzarella ve fesleğen', available: true },
+  { id: 37, name: 'Pizza Karışık', price: 135, category: 'Pizzalar', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&q=80', description: 'Sucuk, sosis, mantar, mısır, zeytin', available: true },
+  { id: 38, name: 'Pizza Pepperoni', price: 125, category: 'Pizzalar', image: 'https://images.unsplash.com/photo-1628840042765-356cda07504e?w=400&q=80', description: 'Pepperoni dilimler ve mozzarella', available: true },
+  { id: 39, name: 'Pizza Vejeteryan', price: 115, category: 'Pizzalar', image: 'https://images.unsplash.com/photo-1511689660979-10d2b1aada49?w=400&q=80', description: 'Sebzeli pizza', available: true },
+  { id: 40, name: 'Klasik Burger', price: 85, category: 'Burgerler', image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=80', description: 'Özel sos, et, sebze ve patates ile', available: true },
+  { id: 41, name: 'Cheeseburger', price: 95, category: 'Burgerler', image: 'https://images.unsplash.com/photo-1550547660-d9450f859349?w=400&q=80', description: 'Double cheddar peynirli', available: true },
+  { id: 42, name: 'Chicken Burger', price: 80, category: 'Burgerler', image: 'https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=400&q=80', description: 'Tavuk burger, özel sos ile', available: true },
+  { id: 43, name: 'Vejeteryan Burger', price: 75, category: 'Burgerler', image: 'https://images.unsplash.com/photo-1520072959219-c595dc870360?w=400&q=80', description: 'Sebzeli vegan burger', available: true },
+  
+  // Makarnalar & Atıştırmalıklar (7 ürün)
+  { id: 44, name: 'Makarna Carbonara', price: 75, category: 'Makarnalar', image: 'https://images.unsplash.com/photo-1612874742237-6526221588e3?w=400&q=80', description: 'Kremalı bekonlu makarna', available: true },
+  { id: 45, name: 'Makarna Bolognese', price: 78, category: 'Makarnalar', image: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&q=80', description: 'Kıymalı domates soslu', available: true },
+  { id: 46, name: 'Penne Arabiata', price: 70, category: 'Makarnalar', image: 'https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=400&q=80', description: 'Acılı domates soslu penne', available: true },
+  { id: 47, name: 'Patates Kızartması', price: 35, category: 'Atıştırmalıklar', image: 'https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?w=400&q=80', description: 'Çıtır patates kızartması', available: true },
+  { id: 48, name: 'Soğan Halkası', price: 40, category: 'Atıştırmalıklar', image: 'https://images.unsplash.com/photo-1639024471283-03518883512d?w=400&q=80', description: 'Kızarmış soğan halkaları', available: true },
+  { id: 49, name: 'Mozzarella Sticks', price: 45, category: 'Atıştırmalıklar', image: 'https://images.unsplash.com/photo-1531749668029-2db88e4276c7?w=400&q=80', description: 'Peynir çubukları, sos ile', available: true },
+  { id: 50, name: 'Karışık Tost', price: 50, category: 'Atıştırmalıklar', image: 'https://images.unsplash.com/photo-1528736235302-52922df5c122?w=400&q=80', description: 'Kaşar, sucuk, domates ile', available: true },
+  
+  // Salatalar (5 ürün)
+  { id: 51, name: 'Sezar Salata', price: 65, category: 'Salatalar', image: 'https://images.unsplash.com/photo-1546793665-c74683f339c1?w=400&q=80', description: 'Izgara tavuk, kruton, parmesan', available: true },
+  { id: 52, name: 'Akdeniz Salatası', price: 55, category: 'Salatalar', image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=80', description: 'Yeşillik, beyaz peynir, zeytin', available: true },
+  { id: 53, name: 'Ton Balıklı Salata', price: 70, category: 'Salatalar', image: 'https://images.unsplash.com/photo-1604909052743-94e838986d24?w=400&q=80', description: 'Ton balığı, yeşillik, mısır', available: true },
+  { id: 54, name: 'Mevsim Salata', price: 45, category: 'Salatalar', image: 'https://images.unsplash.com/photo-1505576399279-565b52d4ac71?w=400&q=80', description: 'Mevsim sebzeleri', available: true },
+  { id: 55, name: 'Çoban Salata', price: 40, category: 'Salatalar', image: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=400&q=80', description: 'Domates, salatalık, biber', available: true },
+  
+  // Tatlılar (12 ürün)
+  { id: 56, name: 'Tiramisu', price: 55, category: 'Tatlılar', image: 'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400&q=80', description: 'İtalyan tatlısı, kahve aromalı', available: true },
+  { id: 57, name: 'Cheesecake', price: 52, category: 'Tatlılar', image: 'https://images.unsplash.com/photo-1578775887804-699de7086ff9?w=400&q=80', description: 'Çilekli cheesecake', available: true },
+  { id: 58, name: 'Sütlaç', price: 35, category: 'Tatlılar', image: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&q=80', description: 'Geleneksel sütlaç, tarçınlı', available: true },
+  { id: 59, name: 'Baklava', price: 45, category: 'Tatlılar', image: 'https://images.unsplash.com/photo-1519676867240-f03562e64548?w=400&q=80', description: 'Antep fıstıklı baklava, 4 dilim', available: true },
+  { id: 60, name: 'Profiterol', price: 48, category: 'Tatlılar', image: 'https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&q=80', description: 'Çikolata soslu profiterol', available: true },
+  { id: 61, name: 'Dondurma', price: 32, category: 'Tatlılar', image: 'https://images.unsplash.com/photo-1580915411954-282cb1b0d780?w=400&q=80', description: 'Top başı, 3 top', available: true },
+  { id: 62, name: 'Kazandibi', price: 40, category: 'Tatlılar', image: 'https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&q=80', description: 'Fırında kazandibi', available: true },
+  { id: 63, name: 'İrmik Helvası', price: 38, category: 'Tatlılar', image: 'https://images.unsplash.com/photo-1599599810769-bcde5a160d32?w=400&q=80', description: 'Dondurmalı irmik helvası', available: true },
+  { id: 64, name: 'Magnolia', price: 42, category: 'Tatlılar', image: 'https://images.unsplash.com/photo-1551404973-761c83cd8339?w=400&q=80', description: 'Muzlu karamelli magnolia', available: true },
+  { id: 65, name: 'San Sebastian', price: 50, category: 'Tatlılar', image: 'https://images.unsplash.com/photo-1626200419199-391ae4be7a41?w=400&q=80', description: 'San Sebastian cheesecake', available: true },
+  { id: 66, name: 'Brownie', price: 45, category: 'Tatlılar', image: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=400&q=80', description: 'Sıcak brownie, dondurma ile', available: true },
+  { id: 67, name: 'Künefe', price: 65, category: 'Tatlılar', image: 'https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?w=400&q=80', description: 'Antep usulü künefe, dondurma ile', available: true }
 ];
 
 // Konum mesafesi hesaplama fonksiyonu (Haversine formülü)
