@@ -1,0 +1,226 @@
+[
+  {
+    "id": "ORD1780615028036",
+    "tableNumber": 11,
+    "items": [
+      {
+        "name": "Dondurma",
+        "quantity": 1,
+        "price": 22,
+        "notes": "",
+        "category": "Tatlılar"
+      }
+    ],
+    "total": 22,
+    "notes": "Kasa POS",
+    "status": "completed",
+    "createdAt": "2026-06-04T23:17:08.036Z",
+    "created_at": "2026-06-04T23:17:08.036Z",
+    "timestamp": "2026-06-04T23:17:08.036Z",
+    "createdByStaff": 1,
+    "source": "pos",
+    "paymentMethod": "card",
+    "paidAt": "2026-06-04T23:17:21.546Z",
+    "discount": 7.55625,
+    "discountPercent": 15,
+    "finalTotal": 14.44,
+    "checkoutNotes": "asd",
+    "archivedAt": "2026-06-04T23:17:21.546Z"
+  },
+  {
+    "id": "ORD1780615028871",
+    "tableNumber": 11,
+    "items": [
+      {
+        "name": "Makarna",
+        "quantity": 1,
+        "price": 65,
+        "notes": "",
+        "category": "Yemekler"
+      }
+    ],
+    "total": 65,
+    "notes": "Kasa POS",
+    "status": "completed",
+    "createdAt": "2026-06-04T23:17:08.871Z",
+    "created_at": "2026-06-04T23:17:08.871Z",
+    "timestamp": "2026-06-04T23:17:08.871Z",
+    "createdByStaff": 1,
+    "source": "pos",
+    "paymentMethod": "card",
+    "paidAt": "2026-06-04T23:17:21.546Z",
+    "discount": 7.55625,
+    "discountPercent": 15,
+    "finalTotal": 57.44,
+    "checkoutNotes": "asd",
+    "archivedAt": "2026-06-04T23:17:21.546Z"
+  },
+  {
+    "id": "ORD1780615029311",
+    "tableNumber": 11,
+    "items": [
+      {
+        "name": "Tavuk Salata",
+        "quantity": 1,
+        "price": 55,
+        "notes": "",
+        "category": "Yemekler"
+      }
+    ],
+    "total": 55,
+    "notes": "Kasa POS",
+    "status": "completed",
+    "createdAt": "2026-06-04T23:17:09.311Z",
+    "created_at": "2026-06-04T23:17:09.311Z",
+    "timestamp": "2026-06-04T23:17:09.311Z",
+    "createdByStaff": 1,
+    "source": "pos",
+    "paymentMethod": "card",
+    "paidAt": "2026-06-04T23:17:21.546Z",
+    "discount": 7.55625,
+    "discountPercent": 15,
+    "finalTotal": 47.44,
+    "checkoutNotes": "asd",
+    "archivedAt": "2026-06-04T23:17:21.546Z"
+  },
+  {
+    "id": "ORD1780615029599",
+    "tableNumber": 11,
+    "items": [
+      {
+        "name": "Köfte",
+        "quantity": 1,
+        "price": 75,
+        "notes": "",
+        "category": "Yemekler"
+      }
+    ],
+    "total": 75,
+    "notes": "Kasa POS",
+    "status": "completed",
+    "createdAt": "2026-06-04T23:17:09.599Z",
+    "created_at": "2026-06-04T23:17:09.599Z",
+    "timestamp": "2026-06-04T23:17:09.599Z",
+    "createdByStaff": 1,
+    "source": "pos",
+    "paymentMethod": "card",
+    "paidAt": "2026-06-04T23:17:21.546Z",
+    "discount": 7.55625,
+    "discountPercent": 15,
+    "finalTotal": 67.44,
+    "checkoutNotes": "asd",
+    "archivedAt": "2026-06-04T23:17:21.546Z"
+  },
+  {
+    "id": "ORD1780615029872",
+    "tableNumber": 11,
+    "items": [
+      {
+        "name": "Tiramisu",
+        "quantity": 1,
+        "price": 45,
+        "notes": "",
+        "category": "Tatlılar"
+      }
+    ],
+    "total": 45,
+    "notes": "Kasa POS",
+    "status": "completed",
+    "createdAt": "2026-06-04T23:17:09.872Z",
+    "created_at": "2026-06-04T23:17:09.872Z",
+    "timestamp": "2026-06-04T23:17:09.872Z",
+    "createdByStaff": 1,
+    "source": "pos",
+    "paymentMethod": "card",
+    "paidAt": "2026-06-04T23:17:21.546Z",
+    "discount": 7.55625,
+    "discountPercent": 15,
+    "finalTotal": 37.44,
+    "checkoutNotes": "asd",
+    "archivedAt": "2026-06-04T23:17:21.546Z"
+  },
+  {
+    "id": "ORD1780615030464",
+    "tableNumber": 11,
+    "items": [
+      {
+        "name": "Hamburger",
+        "quantity": 1,
+        "price": 85,
+        "notes": "",
+        "category": "Yemekler"
+      }
+    ],
+    "total": 85,
+    "notes": "Kasa POS",
+    "status": "completed",
+    "createdAt": "2026-06-04T23:17:10.464Z",
+    "created_at": "2026-06-04T23:17:10.464Z",
+    "timestamp": "2026-06-04T23:17:10.464Z",
+    "createdByStaff": 1,
+    "source": "pos",
+    "paymentMethod": "card",
+    "paidAt": "2026-06-04T23:17:21.546Z",
+    "discount": 7.55625,
+    "discountPercent": 15,
+    "finalTotal": 77.44,
+    "checkoutNotes": "asd",
+    "archivedAt": "2026-06-04T23:17:21.546Z"
+  },
+  {
+    "id": "ORD1780615030695",
+    "tableNumber": 11,
+    "items": [
+      {
+        "name": "Soğuk Kahve",
+        "quantity": 1,
+        "price": 28,
+        "notes": "",
+        "category": "İçecekler"
+      }
+    ],
+    "total": 28,
+    "notes": "Kasa POS",
+    "status": "completed",
+    "createdAt": "2026-06-04T23:17:10.695Z",
+    "created_at": "2026-06-04T23:17:10.695Z",
+    "timestamp": "2026-06-04T23:17:10.695Z",
+    "createdByStaff": 1,
+    "source": "pos",
+    "paymentMethod": "card",
+    "paidAt": "2026-06-04T23:17:21.546Z",
+    "discount": 7.55625,
+    "discountPercent": 15,
+    "finalTotal": 20.44,
+    "checkoutNotes": "asd",
+    "archivedAt": "2026-06-04T23:17:21.546Z"
+  },
+  {
+    "id": "ORD1780615030872",
+    "tableNumber": 11,
+    "items": [
+      {
+        "name": "Soğuk Kahve",
+        "quantity": 1,
+        "price": 28,
+        "notes": "",
+        "category": "İçecekler"
+      }
+    ],
+    "total": 28,
+    "notes": "Kasa POS",
+    "status": "completed",
+    "createdAt": "2026-06-04T23:17:10.872Z",
+    "created_at": "2026-06-04T23:17:10.872Z",
+    "timestamp": "2026-06-04T23:17:10.872Z",
+    "createdByStaff": 1,
+    "source": "pos",
+    "paymentMethod": "card",
+    "paidAt": "2026-06-04T23:17:21.546Z",
+    "discount": 7.55625,
+    "discountPercent": 15,
+    "finalTotal": 20.44,
+    "checkoutNotes": "asd",
+    "archivedAt": "2026-06-04T23:17:21.546Z"
+  }
+]

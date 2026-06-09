@@ -1,0 +1,91 @@
+@use 'sass:color';
+
+// Button mixin
+@mixin button-variant($color, $bg, $border: $bg) {
+  color: $color;
+  background-color: $bg;
+  border-color: $border;
+  
+  &:hover {
+    background-color: color.adjust($bg, $lightness: -10%);
+    border-color: color.adjust($border, $lightness: -10%);
+    transform: translateY(-2px);
+  }
+  
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px color.adjust($bg, $alpha: -0.8);
+  }
+  
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+  }
+}
+
+// Card mixin
+@mixin card($padding: 1.5rem, $border-radius: 12px) {
+  background: white;
+  border-radius: $border-radius;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: $padding;
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-3px);
+  }
+}
+
+// Responsive mixin
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 767px) { @content; }
+  }
+  @if $breakpoint == tablet {
+    @media (min-width: 768px) and (max-width: 1023px) { @content; }
+  }
+  @if $breakpoint == desktop {
+    @media (min-width: 1024px) { @content; }
+  }
+}
+
+// Form control mixin
+@mixin form-control {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  
+  &:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 2px color.adjust(#667eea, $alpha: -0.8);
+  }
+}
+
+// Status badge mixin
+@mixin status-badge($bg-color, $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+// Flexbox utilities
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

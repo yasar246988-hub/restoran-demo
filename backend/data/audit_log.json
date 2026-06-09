@@ -1,0 +1,462 @@
+[
+  {
+    "id": "AUDIT_1781021679533",
+    "timestamp": "2026-06-09T16:14:39.533Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "QR_MENU_TEMA",
+    "details": "QR Menü teması değiştirildi: fresh (Layout: list)",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1781021676392",
+    "timestamp": "2026-06-09T16:14:36.392Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "QR_MENU_LOGO",
+    "details": "QR Menü logosu yüklendi: product-1781021676385-338417701.jpg",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1781019305552",
+    "timestamp": "2026-06-09T15:35:05.552Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "QR_MENU_TEMA",
+    "details": "QR Menü teması değiştirildi: fresh (Layout: list)",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1781019292351",
+    "timestamp": "2026-06-09T15:34:52.351Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "QR_MENU_TEMA",
+    "details": "QR Menü teması değiştirildi: fresh (Layout: masonry)",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1781019240778",
+    "timestamp": "2026-06-09T15:34:00.778Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "QR_MENU_TEMA",
+    "details": "QR Menü teması değiştirildi: fresh (Layout: list)",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1781019225586",
+    "timestamp": "2026-06-09T15:33:45.586Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "QR_MENU_TEMA",
+    "details": "QR Menü teması değiştirildi: fresh (Layout: grid)",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1781019195827",
+    "timestamp": "2026-06-09T15:33:15.827Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "QR_MENU_TEMA",
+    "details": "QR Menü teması değiştirildi: fresh (Layout: horizontal)",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1781019160357",
+    "timestamp": "2026-06-09T15:32:40.357Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "QR_MENU_TEMA",
+    "details": "QR Menü teması değiştirildi: vintage (Layout: masonry)",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1781017097618",
+    "timestamp": "2026-06-09T14:58:17.618Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "QR_MENU_TEMA",
+    "details": "QR Menü teması değiştirildi: vibrant",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1781017055447",
+    "timestamp": "2026-06-09T14:57:35.447Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "QR_MENU_TEMA",
+    "details": "QR Menü teması değiştirildi: warm",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1781015944713",
+    "timestamp": "2026-06-09T14:39:04.713Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "QR_MENU_TEMA",
+    "details": "QR Menü teması değiştirildi: fresh",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1781015939795",
+    "timestamp": "2026-06-09T14:38:59.795Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "QR_MENU_TEMA",
+    "details": "QR Menü teması değiştirildi: modern",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1781015932507",
+    "timestamp": "2026-06-09T14:38:52.507Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "QR_MENU_TEMA",
+    "details": "QR Menü teması değiştirildi: warm",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1781015926867",
+    "timestamp": "2026-06-09T14:38:46.867Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "QR_MENU_TEMA",
+    "details": "QR Menü teması değiştirildi: elegant",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1781015919763",
+    "timestamp": "2026-06-09T14:38:39.763Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "QR_MENU_TEMA",
+    "details": "QR Menü teması değiştirildi: minimal",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1781015867200",
+    "timestamp": "2026-06-09T14:37:47.200Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "QR_MENU_TEMA",
+    "details": "QR Menü teması değiştirildi: vintage",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1781015563523",
+    "timestamp": "2026-06-09T14:32:43.523Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "QR_MENU_TEMA",
+    "details": "QR Menü teması değiştirildi: warm",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1781015488701",
+    "timestamp": "2026-06-09T14:31:28.701Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "QR_MENU_TEMA",
+    "details": "QR Menü teması değiştirildi: vibrant",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1781015475532",
+    "timestamp": "2026-06-09T14:31:15.532Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "QR_MENU_TEMA",
+    "details": "QR Menü teması değiştirildi: fresh",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1781015350591",
+    "timestamp": "2026-06-09T14:29:10.591Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "QR_MENU_TEMA",
+    "details": "QR Menü teması değiştirildi: warm",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1781015326135",
+    "timestamp": "2026-06-09T14:28:46.135Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "QR_MENU_TEMA",
+    "details": "QR Menü teması değiştirildi: elegant",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1780699776641",
+    "timestamp": "2026-06-05T22:49:36.641Z",
+    "userId": null,
+    "userName": "Sistem",
+    "userRole": "system",
+    "action": "GIRIS",
+    "details": "CEO Admin (ceo) sisteme giriş yaptı",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1780699678992",
+    "timestamp": "2026-06-05T22:47:58.992Z",
+    "userId": null,
+    "userName": "Sistem",
+    "userRole": "system",
+    "action": "GIRIS",
+    "details": "CEO Admin (ceo) sisteme giriş yaptı",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1780691050711",
+    "timestamp": "2026-06-05T20:24:10.711Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "POS_SIPARIS",
+    "details": "Kasa — Masa 5 sipariş ₺25",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1780687126694",
+    "timestamp": "2026-06-05T19:18:46.694Z",
+    "userId": null,
+    "userName": "Sistem",
+    "userRole": "system",
+    "action": "GIRIS",
+    "details": "CEO Admin (ceo) sisteme giriş yaptı",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1780638609273",
+    "timestamp": "2026-06-05T05:50:09.273Z",
+    "userId": null,
+    "userName": "Sistem",
+    "userRole": "system",
+    "action": "GIRIS",
+    "details": "çiko (calisan) sisteme giriş yaptı",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1780638597719",
+    "timestamp": "2026-06-05T05:49:57.719Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "KULLANICI_OLUSTURMA",
+    "details": "Yeni kullanıcı oluşturuldu: çiko (calisan)",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1780628660734",
+    "timestamp": "2026-06-05T03:04:20.734Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "KDV_AYAR",
+    "details": "KDV ayarları güncellendi: %10 (devre dışı)",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1780628659771",
+    "timestamp": "2026-06-05T03:04:19.771Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "KDV_AYAR",
+    "details": "KDV ayarları güncellendi: %10 (aktif)",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1780628658855",
+    "timestamp": "2026-06-05T03:04:18.855Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "KDV_AYAR",
+    "details": "KDV ayarları güncellendi: %10 (devre dışı)",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1780628657528",
+    "timestamp": "2026-06-05T03:04:17.528Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "KDV_AYAR",
+    "details": "KDV ayarları güncellendi: %10 (aktif)",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1780628636565",
+    "timestamp": "2026-06-05T03:03:56.565Z",
+    "userId": null,
+    "userName": "Sistem",
+    "userRole": "system",
+    "action": "MENU_GUNCELLEME",
+    "details": "Menü ürünü güncellendi: Latte (₺30)",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1780628635831",
+    "timestamp": "2026-06-05T03:03:55.831Z",
+    "userId": null,
+    "userName": "Sistem",
+    "userRole": "system",
+    "action": "MENU_GUNCELLEME",
+    "details": "Menü ürünü güncellendi: Latte (₺30)",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1780615041548",
+    "timestamp": "2026-06-04T23:17:21.548Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "HESAP_ODEME",
+    "details": "Masa 11 hesabı ödendi. Toplam: ₺342.55 (card)",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1780615038140",
+    "timestamp": "2026-06-04T23:17:18.140Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "POS_TERMINAL",
+    "details": "Masa 11 — ₺342.55 POS'a gönderildi",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1780615030872",
+    "timestamp": "2026-06-04T23:17:10.872Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "POS_SIPARIS",
+    "details": "Kasa — Masa 11 sipariş ₺28",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1780615030695",
+    "timestamp": "2026-06-04T23:17:10.695Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "POS_SIPARIS",
+    "details": "Kasa — Masa 11 sipariş ₺28",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1780615030464",
+    "timestamp": "2026-06-04T23:17:10.464Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "POS_SIPARIS",
+    "details": "Kasa — Masa 11 sipariş ₺85",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1780615029872",
+    "timestamp": "2026-06-04T23:17:09.872Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "POS_SIPARIS",
+    "details": "Kasa — Masa 11 sipariş ₺45",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1780615029600",
+    "timestamp": "2026-06-04T23:17:09.600Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "POS_SIPARIS",
+    "details": "Kasa — Masa 11 sipariş ₺75",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1780615029312",
+    "timestamp": "2026-06-04T23:17:09.312Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "POS_SIPARIS",
+    "details": "Kasa — Masa 11 sipariş ₺55",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1780615028871",
+    "timestamp": "2026-06-04T23:17:08.871Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "POS_SIPARIS",
+    "details": "Kasa — Masa 11 sipariş ₺65",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1780615028053",
+    "timestamp": "2026-06-04T23:17:08.053Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "POS_SIPARIS",
+    "details": "Kasa — Masa 11 sipariş ₺22",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1777513239986",
+    "timestamp": "2026-04-30T01:40:39.986Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "KASA_KAPANIS",
+    "details": "Kasa kapatıldı. Toplam: ₺0.00, Fark: ₺185.00",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1777513218289",
+    "timestamp": "2026-04-30T01:40:18.289Z",
+    "userId": 1,
+    "userName": "CEO Admin",
+    "userRole": "ceo",
+    "action": "KASA_ACILIS",
+    "details": "Kasa açıldı. Başlangıç: ₺11200",
+    "ip": "::1"
+  },
+  {
+    "id": "AUDIT_1777513095610",
+    "timestamp": "2026-04-30T01:38:15.610Z",
+    "userId": null,
+    "userName": "Sistem",
+    "userRole": "system",
+    "action": "ODEME",
+    "details": "Masa 5 — ₺282.00 (card)",
+    "ip": "::1"
+  }
+]

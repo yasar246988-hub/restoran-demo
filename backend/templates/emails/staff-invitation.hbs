@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restoran Davetiyesi</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="email-container">
+    <div class="header">
+      <h1>Restoran Yönetim Sistemi</h1>
+    </div>
+    
+    <div class="content">
+      <h2>Merhaba {{name}},</h2>
+      
+      <p>{{restaurantName}} restoranına {{role}} olarak davet edildiniz.</p>
+      
+      <div class="credentials">
+        <h3>Giriş Bilgileriniz:</h3>
+        <p><strong>Email:</strong> {{email}}</p>
+        <p><strong>Geçici Şifre:</strong> {{temporaryPassword}}</p>
+      </div>
+      
+      <div class="cta-section">
+        <a href="{{loginUrl}}" class="btn btn-primary">Sisteme Giriş Yap</a>
+      </div>
+      
+      <div class="note">
+        <p><em>Güvenlik nedeniyle, ilk girişinizden sonra şifrenizi değiştirmeniz önerilir.</em></p>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <p>Bu email otomatik olarak gönderilmiştir. Lütfen yanıtlamayınız.</p>
+      <p>&copy; 2025 Restaurant Management System</p>
+    </div>
+  </div>
+</body>
+</html> 

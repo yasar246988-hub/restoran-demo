@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "username": "ceo",
+    "password": "ceo123",
+    "role": "ceo",
+    "name": "CEO Admin",
+    "email": "ceo@kafe.com",
+    "createdAt": "2025-08-03T20:09:25.535Z",
+    "isActive": true
+  },
+  {
+    "id": 2,
+    "username": "çiiko",
+    "password": "çiiko",
+    "role": "calisan",
+    "name": "çiko",
+    "createdAt": "2026-06-05T05:49:57.717Z",
+    "isActive": true
+  }
+]

@@ -1,0 +1,40 @@
+========================================
+           {{restaurantName}}
+========================================
+Sipariş No: {{orderNumber}}
+Masa: {{table.number}}
+Tarih: {{formatDate createdAt}}
+Garson: {{waiter.name}}
+========================================
+
+{{#each items}}
+{{menuItem.name}} x{{quantity}}
+{{#each extras}}
+  + {{name}} (+{{price}}₺)
+{{/each}}
+{{#if notes}}
+  Not: {{notes}}
+{{/if}}
+                     {{formatPrice (multiply price quantity)}}₺
+
+{{/each}}
+========================================
+Ara Toplam:        {{formatPrice subtotal}}₺
+{{#if tax}}
+KDV (%{{taxRate}}):           {{formatPrice tax}}₺
+{{/if}}
+{{#if discount}}
+İndirim:           -{{formatPrice discount}}₺
+{{/if}}
+========================================
+TOPLAM:            {{formatPrice totalAmount}}₺
+========================================
+
+{{#if notes}}
+Not: {{notes}}
+{{/if}}
+
+Teşekkür ederiz!
+{{website}}
+
+{{formatDate createdAt 'HH:mm:ss'}} 

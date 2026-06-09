@@ -1,0 +1,88 @@
+[
+  {
+    "id": "PERF1776986969788",
+    "employeeId": 1,
+    "employeeName": "CEO Admin",
+    "type": "order",
+    "orderId": "ORD1776986914341",
+    "duration": 1,
+    "revenue": 32,
+    "timestamp": "2026-04-23T23:29:29.788Z"
+  },
+  {
+    "id": "PERF1777138933023",
+    "employeeId": 1,
+    "employeeName": "CEO Admin",
+    "type": "order",
+    "orderId": "ORD1777138896606",
+    "duration": 1,
+    "revenue": 163,
+    "timestamp": "2026-04-25T17:42:13.023Z"
+  },
+  {
+    "id": "PERF1777513118980",
+    "employeeId": 1,
+    "employeeName": "CEO Admin",
+    "type": "order",
+    "orderId": "ORD1777513111850",
+    "duration": 0,
+    "revenue": 55,
+    "timestamp": "2026-04-30T01:38:38.980Z"
+  },
+  {
+    "id": "PERF1777513164233",
+    "employeeId": 1,
+    "employeeName": "CEO Admin",
+    "type": "waiter_call",
+    "callId": "CALL1777513156297",
+    "duration": 0,
+    "timestamp": "2026-04-30T01:39:24.233Z"
+  },
+  {
+    "id": "PERF1777513209201",
+    "employeeId": 1,
+    "employeeName": "CEO Admin",
+    "type": "order",
+    "orderId": "ORD1777513190570",
+    "duration": 0,
+    "revenue": 130,
+    "timestamp": "2026-04-30T01:40:09.201Z"
+  },
+  {
+    "id": "PERF1777513509609",
+    "employeeId": 1,
+    "employeeName": "CEO Admin",
+    "type": "order",
+    "orderId": "ORD1777513374457",
+    "duration": 2,
+    "revenue": 65,
+    "timestamp": "2026-04-30T01:45:09.609Z"
+  },
+  {
+    "id": "PERF1780441805207",
+    "employeeId": 1,
+    "employeeName": "CEO Admin",
+    "type": "waiter_call",
+    "callId": "CALL1780441799632",
+    "duration": 0,
+    "timestamp": "2026-06-02T23:10:05.207Z"
+  },
+  {
+    "id": "PERF1780616169719",
+    "employeeId": 1,
+    "employeeName": "CEO Admin",
+    "type": "waiter_call",
+    "callId": "CALL1780616159055",
+    "duration": 0,
+    "timestamp": "2026-06-04T23:36:09.719Z"
+  },
+  {
+    "id": "PERF1780628773519",
+    "employeeId": 1,
+    "employeeName": "CEO Admin",
+    "type": "waiter_call",
+    "callId": "CALL1780628720490",
+    "duration": 1,
+    "timestamp": "2026-06-05T03:06:13.519Z"
+  }
+]

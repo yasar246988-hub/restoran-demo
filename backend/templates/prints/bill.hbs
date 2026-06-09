@@ -1,0 +1,49 @@
+========================================
+           {{restaurantName}}
+           ADISYON / BILL
+========================================
+Sipariş No: {{orderNumber}}
+Masa No: {{table.number}}
+Tarih: {{formatDate createdAt 'DD/MM/YYYY HH:mm'}}
+Garson: {{waiter.name}}
+========================================
+
+{{#each items}}
+{{menuItem.name}}
+  {{quantity}} x {{formatPrice price}}₺ = {{formatPrice (multiply quantity price)}}₺
+{{#each extras}}
+  + {{name}} ({{formatPrice price}}₺)
+{{/each}}
+{{#if notes}}
+  Not: {{notes}}
+{{/if}}
+
+{{/each}}
+========================================
+Ara Toplam:        {{formatPrice subtotal}}₺
+{{#if discount}}
+İndirim ({{discountRate}}%):    -{{formatPrice discount}}₺
+{{/if}}
+Net Tutar:         {{formatPrice netAmount}}₺
+KDV ({{taxRate}}%):            +{{formatPrice tax}}₺
+========================================
+GENEL TOPLAM:      {{formatPrice totalAmount}}₺
+========================================
+
+Ödeme Şekli: {{getPaymentMethodText paymentMethod}}
+{{#if paymentDetails}}
+{{paymentDetails}}
+{{/if}}
+
+========================================
+         FİŞ BİLGİLERİ
+========================================
+VKN: {{taxNumber}}
+Adres: {{address}}
+Tel: {{phone}}
+
+Fiş No: {{receiptNumber}}
+Fiş Tarihi: {{formatDate paidAt 'DD/MM/YYYY HH:mm:ss'}}
+
+Bu belge fatura yerine geçmez.
+İyi günler dileriz! 

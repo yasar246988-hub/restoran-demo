@@ -1,0 +1,26 @@
+[
+  {
+    "id": "KASA_1777513218288",
+    "openedBy": "CEO Admin",
+    "openedById": 1,
+    "openedAt": "2026-04-30T01:40:18.288Z",
+    "openingCash": 11200,
+    "notes": "",
+    "status": "closed",
+    "closedAt": "2026-04-30T01:40:39.985Z",
+    "closingCash": 11385,
+    "expectedCash": 11200,
+    "cashDifference": 185,
+    "totalSales": {
+      "cash": 0,
+      "card": 0,
+      "transfer": 0,
+      "mixed": 0,
+      "total": 0
+    },
+    "orderCount": 0,
+    "closedBy": "CEO Admin",
+    "closedById": 1,
+    "closingNotes": ""
+  }
+]

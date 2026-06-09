@@ -1,0 +1,12 @@
+{
+  "activeTheme": "fresh",
+  "customization": {
+    "cafeName": "Kafe",
+    "cafeSlogan": "Lezzetli anlar için buradayız",
+    "showPrices": true,
+    "showImages": true,
+    "enableSearch": true,
+    "logoUrl": "/uploads/product-1781021676385-338417701.jpg"
+  },
+  "selectedLayout": "list"
+}
