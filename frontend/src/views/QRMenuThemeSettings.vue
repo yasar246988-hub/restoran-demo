@@ -210,6 +210,9 @@ import axios from 'axios'
 import { getThemesList } from '@/components/QRMenuThemes.js'
 import QRCode from 'qrcode'
 
+// Backend API URL
+const API_URL = process.env.VUE_APP_API_URL || 'http://localhost:3000'
+
 export default {
   name: 'QRMenuThemeSettings',
   data() {
@@ -277,7 +280,7 @@ export default {
     async loadSettings() {
       try {
         const token = localStorage.getItem('token')
-        const res = await axios.get('http://localhost:3000/api/qr-menu/theme', {
+        const res = await axios.get(`${API_URL}/api/qr-menu/theme`, {
           headers: { Authorization: `Bearer ${token}` }
         })
         
@@ -306,7 +309,7 @@ export default {
     getLogoUrl(url) {
       if (!url) return null
       if (url.startsWith('http')) return url
-      return 'http://localhost:3000' + url
+      return API_URL + url
     },
     
     async handleLogoUpload(event) {
@@ -332,7 +335,7 @@ export default {
         formData.append('logo', file)
         
         const token = localStorage.getItem('token')
-        const res = await axios.post('http://localhost:3000/api/qr-menu/upload-logo', formData, {
+        const res = await axios.post(`${API_URL}/api/qr-menu/upload-logo`, formData, {
           headers: {
             'Authorization': `Bearer ${token}`,
             'Content-Type': 'multipart/form-data'
@@ -361,7 +364,7 @@ export default {
       
       try {
         const token = localStorage.getItem('token')
-        const res = await axios.delete('http://localhost:3000/api/qr-menu/delete-logo', {
+        const res = await axios.delete(`${API_URL}/api/qr-menu/delete-logo`, {
           headers: { Authorization: `Bearer ${token}` }
         })
         
@@ -414,7 +417,7 @@ export default {
 
       try {
         const token = localStorage.getItem('token')
-        const res = await axios.put('http://localhost:3000/api/qr-menu/theme', {
+        const res = await axios.put(`${API_URL}/api/qr-menu/theme`, {
           activeTheme: this.activeTheme,
           selectedLayout: this.selectedLayout, // Layout'u da kaydet
           customization: this.customization

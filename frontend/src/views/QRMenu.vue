@@ -344,6 +344,9 @@ import axios from 'axios'
 import { t, tCategory, LANGUAGES, getDir } from '@/utils/i18n.js'
 import { getTheme } from '@/components/QRMenuThemes.js'
 
+// Backend API URL - Production'da Railway URL'i kullan
+const API_URL = process.env.VUE_APP_API_URL || 'http://localhost:3000'
+
 export default {
   name: 'QRMenu',
   data() {
@@ -487,7 +490,7 @@ export default {
           console.log('📍 Demo: Konum olmadan devam ediliyor', err.message || '')
         }
         
-        const res = await axios.post('http://localhost:3000/api/table/session', {
+        const res = await axios.post(`${API_URL}/api/table/session`, {
           tableId: this.tableNumber,
           location
         })
@@ -515,7 +518,7 @@ export default {
       if (!this.tableNumber) return
       if (openModal) { this.showBillModal = true; this.billLoading = true }
       try {
-        const res = await axios.get(`http://localhost:3000/api/tables/${this.tableNumber}/bill`)
+        const res = await axios.get(`${API_URL}/api/tables/${this.tableNumber}/bill`)
         if (res.data.success) this.billData = res.data.data
       } catch (e) { console.warn(e.message) }
       finally { this.billLoading = false }
@@ -530,7 +533,7 @@ export default {
     async loadTheme() {
       this.themeLoading = true
       try {
-        const res = await axios.get('http://localhost:3000/api/qr-menu/theme')
+        const res = await axios.get(`${API_URL}/api/qr-menu/theme`)
         if (res.data.success) {
           const themeData = res.data.data
           this.currentTheme = themeData.activeTheme || 'modern'
@@ -597,7 +600,7 @@ export default {
     async loadMenu() {
       this.loading = true
       try {
-        const res = await axios.get('http://localhost:3000/api/menu')
+        const res = await axios.get(`${API_URL}/api/menu`)
         if (res.data.success) {
           this.menuItems = res.data.data || []
           if (this.allCategories.length) this.activeCategory = this.allCategories[0]
@@ -621,7 +624,7 @@ export default {
     getImgUrl(img) {
       if (!img) return null
       if (img.startsWith('http')) return img
-      return 'http://localhost:3000' + img
+      return API_URL + img
     },
 
     scrollToCategory(cat) {
@@ -717,7 +720,7 @@ export default {
         }
         
         // Sipariş gönder
-        await axios.post('http://localhost:3000/api/orders', {
+        await axios.post(`${API_URL}/api/orders`, {
           sessionId: this.sessionId,
           token: this.sessionToken,
           tableNumber: this.tableNumber,
@@ -746,7 +749,7 @@ export default {
     async callWaiter(msg) {
       this.showWaiterModal = false
       try {
-        await axios.post('http://localhost:3000/api/waiter-calls', { tableId: this.tableNumber, tableNumber: this.tableNumber, reason: msg, status: 'pending' })
+        await axios.post(`${API_URL}/api/waiter-calls`, { tableId: this.tableNumber, tableNumber: this.tableNumber, reason: msg, status: 'pending' })
         alert(this.t('waiter_called'))
       } catch (error) {
         console.error('Garson çağrı hatası:', error)

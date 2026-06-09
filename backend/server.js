@@ -75,8 +75,8 @@ const upload = multer({
 
 // Middleware
 app.use(cors({
-  origin: "http://localhost:8080",
-  methods: ["GET", "POST", "PUT", "DELETE"],
+  origin: true, // Railway'de tüm origin'lere izin ver
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   credentials: false
 }));
 app.use(express.json({ limit: '10mb' })); // Büyük base64 resimleri için limit artırıldı
