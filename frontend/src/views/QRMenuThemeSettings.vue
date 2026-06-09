@@ -208,6 +208,7 @@
 <script>
 import axios from 'axios'
 import { getThemesList } from '@/components/QRMenuThemes.js'
+import QRCode from 'qrcode'
 
 export default {
   name: 'QRMenuThemeSettings',
@@ -497,14 +498,16 @@ export default {
           img.style.height = 'auto'
           qrContainer.appendChild(img)
         } else {
-          // QRCode.js kullan
-          new QRCode(qrContainer, {
-            text: this.qrCodeUrl,
+          // qrcode paketi kullan (canvas-based)
+          QRCode.toCanvas(qrContainer, this.qrCodeUrl, {
             width: 300,
-            height: 300,
-            colorDark: '#000000',
-            colorLight: '#ffffff',
-            correctLevel: QRCode.CorrectLevel.H
+            margin: 2,
+            color: {
+              dark: '#000000',
+              light: '#ffffff'
+            }
+          }, (error) => {
+            if (error) console.error('QR Code oluşturma hatası:', error)
           })
         }
       } catch (e) {
